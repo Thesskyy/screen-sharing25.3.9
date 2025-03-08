@@ -121,13 +121,13 @@ export default function HostPage() {
                     </Link>
                 </Button>
 
-                <Card>
+                <Card className="bg-white/50">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <Monitor className="h-6 w-6" />
                             Your Screen Sharing Room
                         </CardTitle>
-                        <CardDescription>Share your room code or link with others to let them view your screen. To share audio as well, ensure you're using Chrome or Edge, and select the option to share a tab.</CardDescription>
+                        <CardDescription className="text-black">Share your room code or link with others to let them view your screen. To share audio as well, ensure you're using Chrome or Edge, and select the option to share a tab.</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                         <ShareOptions roomId={roomId} />

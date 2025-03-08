@@ -18,18 +18,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <body className={inter.className}>
-                <main className="flex flex-col justify-between min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+                <main className="flex flex-col justify-between min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://pic.theshy.best/2025-03/9/【哲风壁纸】庄达菲-庄达菲电脑壁纸.png')" }}>
                     {children}
                     <footer className="py-8 px-4 text-center text-gray-500 text-sm">
-                        Built by{" "}
-                        <Link href="https://tonghohin.vercel.app" className="underline" target="_blank">
+                        Built by{" hin"}
+                        {/* <Link href="https://tonghohin.vercel.app" className="underline" target="_blank">
                             Hin
-                        </Link>
-                        . The source code is available on{" "}
+                        </Link> */}
+                        . Vary by Theshy.
+                        {/* . The source code is available on{" "}
                         <Link href="https://github.com/tonghohin/screen-sharing" className="underline" target="_blank">
                             Github
                         </Link>
-                        .
+                        . */}
                     </footer>
                 </main>
                 <Clarity />

@@ -104,13 +104,13 @@ export default function JoinPage() {
                     </Link>
                 </Button>
 
-                <Card>
+                <Card className="bg-white/50">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <Users className="h-6 w-6" />
                             Join a Room
                         </CardTitle>
-                        <CardDescription>Enter the room code to join and view the shared screen</CardDescription>
+                        <CardDescription className="text-black">Enter the room code to join and view the shared screen</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                         {!activeStream ? (
