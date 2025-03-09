@@ -1,9 +1,18 @@
+"use client";
+import { useState } from "react";
+import LoginPage from "@/components/LoginPage";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Monitor, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    if (!loggedIn) {
+        return <LoginPage onLogin={() => setLoggedIn(true)} />;
+    }
+
     return (
         <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://pic.theshy.best/2025-03/9/【哲风壁纸】庄达菲-庄达菲电脑壁纸.png')" }}>
             <div className="py-12 px-4">
